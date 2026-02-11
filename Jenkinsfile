@@ -3,6 +3,11 @@ pipeline{
     tools{
         maven 'MAVEN'
     }
+    environment{
+        APP_DIR="/opt/springboot-app"
+        JAR_NAME="app.jar"
+        BUILD_JAR="target/demo-0.0.2-snapshot.jar
+    }
     stages{
         stage('Checkout'){
             steps{
@@ -21,6 +26,14 @@ pipeline{
                 }
             }
         }
+                stage('deploy') {
+            steps {
+                script {
+                    sh 'cp $BUILD_JAR $APP_DIR/$JAR_NAME'
+                }
+            }
+        }
     }
 }
+
 
