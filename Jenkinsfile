@@ -6,7 +6,7 @@ pipeline{
     environment{
         APP_DIR="/opt/springboot-app"
         JAR_NAME="app.jar"
-        BUILD_JAR="target/demo-0.0.2-snapshot.jar
+        BUILD_JAR="target/demo-0.0.2-SNAPSHOT.jar
     }
     stages{
         stage('Checkout'){
@@ -35,5 +35,6 @@ pipeline{
         }
     }
 }
+
 
 
