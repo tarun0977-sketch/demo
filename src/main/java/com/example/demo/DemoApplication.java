@@ -15,7 +15,7 @@ public class DemoApplication {
 
 	@GetMapping("test")
 	public String test(){
-		return "Vadinamma thepi kaburu";
+		return "NGV AND TGR";
 	}
 
 }
