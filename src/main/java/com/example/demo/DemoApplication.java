@@ -13,9 +13,9 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("test")
-	public String test(){
-		return "NGV AND TGR";
+	@GetMapping("NGVEERA")
+	public String NGVEERA(){
+		return "prathap loves vadinamma";
 	}
 
 }
